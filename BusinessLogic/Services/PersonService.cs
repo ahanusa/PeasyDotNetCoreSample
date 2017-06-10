@@ -1,9 +1,13 @@
 using System.Collections.Generic;
 using Peasy;
+using PeasyDotNetCoreSample.BusinessLogic.DTO;
 
-public class PersonService : ServiceBase<Person, int>
+namespace PeasyDotNetCoreSample.BusinessLogic.Services
 {
-    public PersonService(IDataProxy<Person, int> dataProxy) : base(dataProxy)
-    {
-    }
+  public class PersonService : ServiceBase<Person, int>
+  {
+      public PersonService(IDataProxy<Person, int> dataProxy) : base(dataProxy)
+      {
+      }
+  }
 }
